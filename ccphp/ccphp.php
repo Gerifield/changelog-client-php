@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Ccphp class.
+ */
 class Ccphp{
 
 	//server URL
