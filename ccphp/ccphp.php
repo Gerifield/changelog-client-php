@@ -27,6 +27,10 @@ class Ccphp{
 		$this->http_auth_pass = $pass;
 	}
 
+	public function send_msg($msg){
+		$this->send(array("description" => $msg));
+	}
+
 	public function send($params = array()){
 
 		$data = array_merge(
