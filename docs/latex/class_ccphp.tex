@@ -1,0 +1,119 @@
+\hypertarget{class_ccphp}{\section{Ccphp Class Reference}
+\label{class_ccphp}\index{Ccphp@{Ccphp}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ccphp_a62dde6b8ff871fdf5a347a764650c0af}{\-\_\-\-\_\-construct} (\$url)
+\item 
+\hyperlink{class_ccphp_a3c182a11eaaa7aa0657e0e574c8ab4ff}{set\-\_\-defaults} (\$params=array())
+\item 
+\hyperlink{class_ccphp_a09c14628a4c4588370b6a125a381ae65}{set\-\_\-auth} (\$user=\char`\"{}\char`\"{}, \$pass=\char`\"{}\char`\"{})
+\item 
+\hyperlink{class_ccphp_a66059729d8c99243e70381548314e0c8}{send\-\_\-msg} (\$msg)
+\item 
+\hyperlink{class_ccphp_a2869b619bb091c683ee3d555a07a8745}{send} (\$params=array())
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_ccphp}{Ccphp} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_ccphp_a62dde6b8ff871fdf5a347a764650c0af}{\index{Ccphp@{Ccphp}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!Ccphp@{Ccphp}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}Ccphp\-::\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$url}
+\end{DoxyParamCaption}
+)}}\label{class_ccphp_a62dde6b8ff871fdf5a347a764650c0af}
+Constructor.
+
+Sets the server address for the queries
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$url} & Server U\-R\-L with http prefix and /api/events postix. For example\-: \href{http://}{\tt http\-://}$<$server\-\_\-url\-\_\-here$>$/api/events \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ccphp_a2869b619bb091c683ee3d555a07a8745}{\index{Ccphp@{Ccphp}!send@{send}}
+\index{send@{send}!Ccphp@{Ccphp}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}Ccphp\-::send (
+\begin{DoxyParamCaption}
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{class_ccphp_a2869b619bb091c683ee3d555a07a8745}
+Send a message to the changelog server.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & Parameter array Possible keys could be\-:
+\begin{DoxyItemize}
+\item description -\/ Description/message
+\item criticality -\/ Error/event level
+\item category -\/ Error/event category 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_ccphp_a66059729d8c99243e70381548314e0c8}{\index{Ccphp@{Ccphp}!send\-\_\-msg@{send\-\_\-msg}}
+\index{send\-\_\-msg@{send\-\_\-msg}!Ccphp@{Ccphp}}
+\subsubsection[{send\-\_\-msg}]{\setlength{\rightskip}{0pt plus 5cm}Ccphp\-::send\-\_\-msg (
+\begin{DoxyParamCaption}
+\item[{}]{\$msg}
+\end{DoxyParamCaption}
+)}}\label{class_ccphp_a66059729d8c99243e70381548314e0c8}
+Send a simple message.
+
+This function uses the {\ttfamily send} command and only sets the {\ttfamily description} value in the request array
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}type\mbox{]}} & \$msg Message/description to send \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_ccphp_a09c14628a4c4588370b6a125a381ae65}{\index{Ccphp@{Ccphp}!set\-\_\-auth@{set\-\_\-auth}}
+\index{set\-\_\-auth@{set\-\_\-auth}!Ccphp@{Ccphp}}
+\subsubsection[{set\-\_\-auth}]{\setlength{\rightskip}{0pt plus 5cm}Ccphp\-::set\-\_\-auth (
+\begin{DoxyParamCaption}
+\item[{}]{\$user = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$pass = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_ccphp_a09c14628a4c4588370b6a125a381ae65}
+H\-T\-T\-P authtentication configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$user} & H\-T\-T\-P auth user \\
+\hline
+string & {\em \$pass} & H\-T\-T\-P auth pass \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_ccphp_a3c182a11eaaa7aa0657e0e574c8ab4ff}{\index{Ccphp@{Ccphp}!set\-\_\-defaults@{set\-\_\-defaults}}
+\index{set\-\_\-defaults@{set\-\_\-defaults}!Ccphp@{Ccphp}}
+\subsubsection[{set\-\_\-defaults}]{\setlength{\rightskip}{0pt plus 5cm}Ccphp\-::set\-\_\-defaults (
+\begin{DoxyParamCaption}
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{class_ccphp_a3c182a11eaaa7aa0657e0e574c8ab4ff}
+Default value changer.
+
+This function sets the default request values for all the other requests after this.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & Parameter array. Possible keys could be\-:
+\begin{DoxyItemize}
+\item description -\/ Description/message
+\item criticality -\/ Error/event level
+\item category -\/ Error/event category 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+ccphp/ccphp.\-php\end{DoxyCompactItemize}
