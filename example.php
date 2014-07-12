@@ -15,8 +15,14 @@ $client->send(array("description" => "hello only"));
 //Set the default values or a single value
 $client->set_defaults(array("criticality" => 3));
 
+
 //Send a single message but with criticality 3
 $client->send(array("description" => "hello crit 3"));
+
+
+
+//Set HTTP authentication
+$this->set_auth("username", "password");
 
 
 ?>
