@@ -14,7 +14,7 @@ Example
 
 	include "ccphp/ccphp.php";
 
-	$client = new Ccphp("http://server_url.com/api/events");
+	$client = new Ccphp("http://<server_url_here>/api/events");
 	$client->send_msg("This is a simple message");
 
 For more examples check the ``example.php``!
