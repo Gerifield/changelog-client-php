@@ -22,7 +22,7 @@ $client->send(array("description" => "hello crit 3"));
 
 
 //Set HTTP authentication
-$this->set_auth("username", "password");
-$this->send_msg("Simple message without array");
+$client->set_auth("username", "password");
+$client->send_msg("Simple message without array");
 
 ?>
