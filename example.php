@@ -8,11 +8,12 @@ $client = new Ccphp("http://80.240.138.19/api/events");
 $client->send(array("description" => "hello", "criticality" => 5, "category" => "info"));
 
 
-//Set message only
+//Set a message only
 $client->send(array("description" => "hello only"));
 
 
 //Set the default values or a single value
+//Every other requests after this would use these options
 $client->set_defaults(array("criticality" => 3));
 
 
