@@ -2,7 +2,7 @@
 
 include "ccphp/ccphp.php";
 
-$client = new Ccphp("http://80.240.138.19/api/events");
+$client = new Ccphp("http://<server_url_here>/api/events");
 
 //Set all params
 $client->send(array("description" => "hello", "criticality" => 5, "category" => "info"));
